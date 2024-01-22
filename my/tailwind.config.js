@@ -6,6 +6,8 @@ module.exports = {
     colors: {
       primary: "#FF715B",
       textInfo: "#A79997",
+      darkWhite: "#F8F8F8",
+      textColor: '#2c2c2c'
     },
     fontFamily: {
       notoSerif: "Noto Serif, serif",
