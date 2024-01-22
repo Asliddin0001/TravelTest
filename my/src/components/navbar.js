@@ -16,21 +16,21 @@ export default function Navbar() {
         <img
           src={logo}
           alt="logo"
-          className="md:w-auto w-[180px] object-contain"
+          className="w-auto md:w-[180px] object-contain"
         />
       </a>
-      <ul className={`${styles.row} sm:flex hidden`}>
+      <ul className={`${styles.row} flex sm:hidden`}>
         {navbarLinks.map((item) => {
           return (
             <li
-              className={`mx-[10px] lg:mx-[30px] duration-200 hover:text-primary cursor-pointer ${styles.informationText}`}
+              className={`lg:mx-[10px] mx-[30px] duration-200 hover:text-primary cursor-pointer ${styles.informationText}`}
             >
               {item.name}
             </li>
           );
         })}
       </ul>
-      <div className={`${styles.row} ${styles.informationText} sm:flex hidden`}>
+      <div className={`${styles.row} ${styles.informationText} flex sm:hidden`}>
         <div
           className={`${styles.row} hover:text-primary duration-200 cursor-pointer border-r-[1px] mr-[10px] pr-[10px] border-[#F1E0DD]`}
         >
@@ -40,7 +40,7 @@ export default function Navbar() {
         <IoSearchOutline className="hover:text-primary cursor-pointer" />
       </div>
       <BiMenuAltRight
-        className="sm:hidden flex size-[45px] cursor-pointer"
+        className="hidden sm:flex size-[45px] cursor-pointer"
         onClick={toggleHandler}
       />
       <div
