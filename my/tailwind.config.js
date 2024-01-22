@@ -5,11 +5,14 @@ module.exports = {
     extend: {},
     colors: {
       primary: "#FF715B",
-      textInfo: '#A79997',
+      textInfo: "#A79997",
     },
     fontFamily: {
-      'notoSerif': 'Noto Serif, serif'
-    }
+      notoSerif: "Noto Serif, serif",
+    },
+    container: {
+      padding: '10px'
+    },
   },
   plugins: [],
-}
+};
