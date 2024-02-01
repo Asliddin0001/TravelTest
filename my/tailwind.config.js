@@ -13,11 +13,14 @@ module.exports = {
       notoSerif: "Noto Serif, serif",
     },
     container: {
-      padding: "10px",
+      padding: {
+        DEFAULT: '1.8vw',
+        lg: '30px'
+      }
     },
     screens: {
       "2xl": { max: "1535px" },
-      xl: { max: "1279px" },
+      xl: { max: "1280px" },
       lg: { max: "1023px" },
       md: { max: "767px" },
       sm: { max: "639px" },
